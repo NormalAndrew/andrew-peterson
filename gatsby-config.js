@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Andrew Peterson - Mechanical Engineer`,
+    title: `Andrew Peterson`,
     description: `Creative Engineer, Adventurous Endurance Athlete, Full-Stack Wannabe...a Portfolio`,
     author: `Andrew Peterson`
   },
