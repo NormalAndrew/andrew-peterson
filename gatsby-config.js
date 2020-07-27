@@ -5,8 +5,13 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Andrew Peterson - Mechanical Engineer`,
+    description: `Creative Engineer, Adventurous Endurance Athlete, Full-Stack Wannabe...a Portfolio`,
+    author: `Andrew Peterson`
+  },
   plugins: [
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`
   ],
 }
