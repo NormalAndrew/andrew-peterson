@@ -1,19 +1,26 @@
 import React from "react"
 import "../styles/styles.scss"
+import { useStaticQuery, graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 
 export default function Home() {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  )
+
   return (
-    <div className="container">
-    <div className="columns">
-      <div className="column">
-        <h2 className="title is-2">Level 2 heading</h2>
-        <p className="content">Cool content. Using Bulma!</p>
-      </div>
-      <div className="column is-four-fifths">
-        <h2 className="title is-2">Level 2 heading</h2>
-        <p className="content">This column is cool too!</p>
-      </div>
-    </div>
-  </div>
+    <Layout siteTitle={site.siteMetadata.title}>
+      <SEO />
+      <h1 className="title">Andrew</h1>
+    </Layout>
   )
 }
