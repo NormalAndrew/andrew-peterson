@@ -1,24 +1,12 @@
 import React from "react"
 import "../styles/styles.scss"
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/Seo'
 
 export default function Home() {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
-
   return (
-    <Layout siteTitle={site.siteMetadata.title}>
+    <Layout>
       <SEO />
       <section className="hero is-fullheight-with-navbar">
         <div className="hero-body">
