@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 
 const PortfolioPage = ({ data }) => {
@@ -13,6 +14,15 @@ const PortfolioPage = ({ data }) => {
           <div className="container" key={portfolio.id}>
             <Link to={portfolio.frontmatter.path}>
               <div className="columns">
+                <div className="column">
+                  <div className="content">
+                    <Img
+                      fixed={portfolio.frontmatter.featuredImage.childImageSharp.fixed}
+                      alt="Sample Image"
+                    />
+                  </div>
+                </div>
+
                 <div className="column">
                   <div className="content">
                     <h1 className="title">{portfolio.frontmatter.title}</h1>
@@ -39,6 +49,13 @@ export const allPortfolioQuery = graphql`
             title
             date(formatString: "MM-DD-YYYY")
             path
+            featuredImage {
+              childImageSharp {
+                fixed {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }

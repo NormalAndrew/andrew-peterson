@@ -6,6 +6,7 @@ company: Molecular Devices
 tags: ["mechanical", "design"]
 tools: ["Solidworks","PDM"]
 type: portfolio
+featuredImage: centricell-simple.jpg
 ---
 
 This is my first sample post in Markdown.
