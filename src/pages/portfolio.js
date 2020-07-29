@@ -10,30 +10,34 @@ const PortfolioPage = ({ data }) => {
   return (
     <Layout>
       <section className="section">
-        {portfolios.map(({ node: portfolio }) => (
-          <div className="container" key={portfolio.id}>
-            <Link to={portfolio.frontmatter.path}>
-              <div className="columns">
-                <div className="column">
-                  <div className="content">
-                    <Img
-                      fixed={portfolio.frontmatter.featuredImage.childImageSharp.fixed}
-                      alt="Sample Image"
-                    />
-                  </div>
-                </div>
+        {portfolios.map(({ node: portfolio }) => {
+          const featuredImage = portfolio.frontmatter.featuredImage.childImageSharp.fixed
 
-                <div className="column">
-                  <div className="content">
-                    <h1 className="title">{portfolio.frontmatter.title}</h1>
-                    <h2 className="subtitle is-size-5">{portfolio.frontmatter.date}</h2>
-                    {/* <p className="subtitle">{portfolio.frontmatter.description}</p> */}
+          return (
+            <div className="container" key={portfolio.id}>
+              <Link to={portfolio.frontmatter.path}>
+                <div className="columns">
+                  <div className="column">
+                    <div className="content">
+                      <Img
+                        fixed={featuredImage}
+                        alt="Sample Image"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="column">
+                    <div className="content">
+                      <h1 className="title">{portfolio.frontmatter.title}</h1>
+                      <h2 className="subtitle is-size-5">{portfolio.frontmatter.date}</h2>
+                      {/* <p className="subtitle">{portfolio.frontmatter.description}</p> */}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-          </div>
-        ))}
+              </Link>
+            </div>
+          )
+        })}
       </section>
     </Layout>
   )
