@@ -7,6 +7,7 @@ tags: ["mechanical", "design"]
 tools: ["Solidworks","PDM"]
 type: portfolio
 featuredImage: centricell-simple.jpg
+backgroundColor: #a23134
 ---
 
 This is my first sample post in Markdown.
