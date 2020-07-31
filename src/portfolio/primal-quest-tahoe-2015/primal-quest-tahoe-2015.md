@@ -3,11 +3,11 @@ title: Primal Quest Tahoe - 2015
 date: 2015-09-04
 path: /primal-quest-tahoe-2015
 author: 'Andrew Peterson'
-excerpt: 'Primal Quest Tahoe - 2015 Adventure Race'
+excerpt: "The toughest race I've ever done."
 type: portfolio
 featuredImage: Primal-Quest-Finish-of-Kayak-Leg.jpg
-tags: ["Adventure"]
-backgroundColor: #f1f1f1
+tags: ["adventure"]
+backgroundColor: "#f1f1f1"
 ---
 In 2015 the fabled Primal Quest race returned onto the Adventure Racing scene after many years in hiding. I decided I needed to give it a go, especially as it was to take place in Tahoe, part of my “greater” backyard. I joined up with a more experience team, NorCal Adventure Racing, with Tim Kuenster, Bill Schwaab and Wendy Welling. I’d done one race with them before, a 30h in 2014. We had a great race together, so I was confident we’d have another great race…though this time it could be up to 8.5 days of it!
 

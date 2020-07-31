@@ -29,6 +29,9 @@ const Navbar = ({ siteTitle }) => {
             <Link className="navbar-item" to="/portfolio">
               Portfolio
               </Link>
+            <Link className="navbar-item" to="/engineer">
+              Engineer
+              </Link>
             <Link className="navbar-item" to="/contact">
               Contact
               </Link>

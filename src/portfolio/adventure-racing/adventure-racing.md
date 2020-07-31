@@ -6,8 +6,8 @@ author: 'Andrew Peterson'
 excerpt: 'Adventure Racing Experience'
 type: portfolio
 featuredImage: Andrew-Adventure-Racing.jpg
-tags: ["Adventure"]
-backgroundColor: #454545
+tags: ["adventure"]
+backgroundColor: "#454545"
 ---
 I’ve always had a love for the wilderness, and a childlike sense of adventure. As I grew up, camping on family trips evolved into solo backpacking excursions. Exploratory bike rides in suburbia evolved into epic mountain bike rides in the Sierras. Running on the soccer field evolved into running off trail at orienteering events. Adventure Racing quickly became my passion, and pushing myself to my limits with teammates at events brought me a sense of accomplishment, and connection to this world that is hard to get any other way. I’m a problem solver by nature, and have a strong spirit, a skill set that has helped me countless times navigate and endure these races.
 

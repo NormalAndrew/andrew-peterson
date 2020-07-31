@@ -6,8 +6,8 @@ author: 'Andrew Peterson'
 excerpt: 'Adventure Race Course Design & Setting'
 type: portfolio
 featuredImage: AR-Course-Setting.jpg
-tags: ["Adventure"]
-backgroundColor: #f1f1f1
+tags: ["adventure"]
+backgroundColor: "#f1f1f1"
 ---
 I’ve helped set various adventure races in the bay area with both [NorCal Adventure Races](http://www.norcal-ar.com/ "NorCal AR") and [Big Blue Adventure](http://www.bigblueadventure.com/pub/main.asp?daPageID=237 "Big Blue Adventure"). In 2010 I worked with Randy Franklin to help Rich Brazeau with a race in Henry Coe State Park (12hr). Randy and I set the trek section of the race, which received great reviews (see our course setting video below). I went on to help Rich again with setting a fun rogaine course at Quicksilver in 2010 (9hr).
 
