@@ -1,6 +1,6 @@
 ---
 title: Primal Quest Tahoe - 2015
-date: 2015-09-04
+date: 2015-08-19
 path: /primal-quest-tahoe-2015
 author: 'Andrew Peterson'
 excerpt: "The toughest race I've ever done."

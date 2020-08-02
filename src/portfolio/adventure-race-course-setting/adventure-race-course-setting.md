@@ -16,3 +16,10 @@ I’ve helped set various adventure races in the bay area with both [NorCal Adve
 In 2011 I set the bike and trek sections of the Ocean Blue adventure race in Half Moon Bay put on by Big Blue. This was a 9hr race. I took racers to some new, and unique locations in this often raced area. It was fun to see how almost every team took on a different route on the trek section.
 
 After a hiatus in 2012 to focus on racing, I came back in 2013 to set the underground 24hr BRAWL race course in Marin with Randy Franklin and Afsheen Mostofi. This course has been going on for many years, organized by the AR community to support the sport. We laid out a fun course, with an epic trek leg through Pt Reyes, and a massive last bike leg with a killer amount of vertical ascent. About 40 people took part, and it’s always a joy to see people out on your course (unless they break collarbones or injure their feet…both of which happened :P)
+
+Courses Set:
+- 2010 Henry Coe 12hr Adventure Race - NorCal AR
+- 2011 Ocean Blue 9hr Adventure Race - Big Blue
+- 2013 BAAR BRAWL 24hr Training Race
+- XXXX Tamarancho Rogaine - 
+- 2019 Cache Creek 8hr Rogaine - NAV-X

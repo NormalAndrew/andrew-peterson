@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 
-const PortfolioPage = ({ data }) => {
-  const { allMarkdownRemark } = useStaticQuery(allPortfolioQuery)
+const DeveloperPage = ({ data }) => {
+  const { allMarkdownRemark } = useStaticQuery(allDeveloperQuery)
   const { edges: portfolios } = allMarkdownRemark
 
   return (
@@ -43,9 +43,9 @@ const PortfolioPage = ({ data }) => {
   )
 }
 
-export const allPortfolioQuery = graphql`
-  query allPortfolioQuery {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "portfolio"}}},sort:{fields:frontmatter___date, order:DESC}) {
+export const allDeveloperQuery = graphql`
+  query allDeveloperQuery {
+    allMarkdownRemark(filter: {frontmatter: {tags: {eq: "developer"}}},sort:{fields:frontmatter___date, order:DESC}) {
       edges {
         node {
           id
@@ -69,4 +69,4 @@ export const allPortfolioQuery = graphql`
   }
 `
 
-export default PortfolioPage
+export default DeveloperPage

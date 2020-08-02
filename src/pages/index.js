@@ -15,7 +15,7 @@ export default function Home() {
             <h1 className="title">I'm a Mechanical Design Engineer in San Francisco.</h1>
             <h1 className="title">
               Here is what I like to{" "}
-              <Link to={`/portfolio/`}>
+              <Link to={`/engineer/`}>
                 work
                 </Link>{" "}
                 on.

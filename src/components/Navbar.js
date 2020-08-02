@@ -38,9 +38,25 @@ const Navbar = ({ siteTitle }) => {
             <Link className="navbar-item" to="/about">
               About
               </Link>
-            <Link className="navbar-item" to="/portfolio">
-              Portfolio
-              </Link>
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">
+                <Link className="navbar-item" to="/portfolio">
+                  Portfolio
+                </Link>
+              </a>
+              <div className="navbar-dropdown">
+                <Link className="navbar-item" to="/engineer">
+                  Engineer
+                </Link>
+                <Link className="navbar-item" to="/developer">
+                  Developer
+                </Link>
+                <Link className="navbar-item" to="/adventure">
+                  Adventure
+                </Link>
+              </div>
+
+            </div>
             <Link className="navbar-item" to="/engineer">
               Engineer
               </Link>

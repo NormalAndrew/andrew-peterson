@@ -3,7 +3,7 @@ title: Adventure Racing - 2008-Present
 date: 2012-02-04
 path: /adventure-racing
 author: 'Andrew Peterson'
-excerpt: 'Adventure Racing Experience'
+excerpt: 'Why I adventure race, along with my race history.'
 type: portfolio
 featuredImage: Andrew-Adventure-Racing.jpg
 tags: ["adventure"]
@@ -76,7 +76,12 @@ Here is a quick video of some night time biking in Waterdog Park in Belmont, CA.
 *2014*
 
 - Gold Rush Mother Lode - 30hr - 4 person coed - 2nd overall - NORCAL Adventure Racing
+- World Rogaining Championships - South Dakota - 24hr - 2 person male - 8th overall - 4th mens open - Dennis & Andrew
 
 *2015*
 
-- GodZone - 10 day - 4 person coed - finished short course - NORCAL Adventure Racing
+- Primal Quest Tahoe - 7 day - 4 person coed - 4th overall - NORCAL Advenure Racing
+
+*2018*
+
+- GodZone - 10 day - 4 person coed - unranked (finished short course in 7 days) - NORCAL Adventure Racing
