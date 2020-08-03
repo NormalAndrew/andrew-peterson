@@ -1,6 +1,27 @@
 @charset "utf-8";
 
+@import "~bulma/sass/utilities/initial-variables";
 // If need, change your variables before importing Bulma
 $title-color: #4a4a4a;
 
-@import "~bulma/bulma.sass";
+// Setup brand colors
+// Andrew colors
+$aqua: #228999;
+
+// $primary: $kaldi-red
+// $primary-invert: $kaldi-red-invert
+$body-color: #333;
+
+// Update Bulma's global variables
+// Font is pulled in using gatsby-plugin-prefetch-google-fonts
+// configured in "gatsby-config.js"
+$family-sans-serif: "Rubik", sans-serif;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+// $input-background-color: $grey-lighter;
+$input-border-color: transparent;
+$input-shadow: none;
+$link: $aqua;
+
+@import "~bulma";
