@@ -8,6 +8,7 @@ type: portfolio
 featuredImage: centricell-simple.jpg
 tags: ["mechanical","design"]
 backgroundColor: "#414141"
+company: "Molecular Devices"
 ---
 The goal of this project was to create an automated cell handling system for Molecular Devices next generation high throughput electrophysiology piece of equipment. I was the only engineer working on this aspect of the project, which covered maintaining the health of live cells suspended in a media bath, concentrating the cells while exchanging the media they are suspended in.
 
