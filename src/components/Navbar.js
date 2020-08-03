@@ -13,7 +13,6 @@ const Navbar = ({ siteTitle }) => {
       >
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            {/* <img src={logo} alt="Kaldi" style={{ width: '88px' }} /> */}
             <h4 className="is-size-4">{siteTitle}</h4>
           </Link>
           {/* Hamburger menu */}
@@ -57,12 +56,9 @@ const Navbar = ({ siteTitle }) => {
               </div>
 
             </div>
-            <Link className="navbar-item" to="/engineer">
-              Engineer
-              </Link>
             <Link className="navbar-item" to="/contact">
               Contact
-              </Link>
+            </Link>
           </div>
         </div>
       </nav>
