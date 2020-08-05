@@ -35,6 +35,15 @@ module.exports = {
               ] // Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
             },
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 800,
+            },
+          },
         ]
       },
     },
