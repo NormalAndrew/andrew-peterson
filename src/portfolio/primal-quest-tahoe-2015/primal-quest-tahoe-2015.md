@@ -15,4 +15,4 @@ The race was epic in every way possible…long legs on foot and bike, many navig
 
 Outside Television filmed the race, and made a 90min show that aired a few times on their channel…I never saw it, though am fairly certain I was in it. Here’s an awesome teaser clip they made for it:
 
-<https://www.youtube.com/watch?v=37re6hRMnpo>
+`youtube: https://www.youtube.com/watch?v=37re6hRMnpo`
