@@ -6,9 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Andrew Peterson`,
+    title: `Andrew Peterson Portfolio`,
     description: `Creative Engineer, Adventurous Endurance Athlete, Full-Stack Wannabe...a Portfolio`,
-    author: `Andrew Peterson`
+    author: `Andrew Peterson`,
+    keywords: ["Mechanical Engineer", "Solidworks", "CAD", "OnShape", "Developer", "React", "React Native", "Fullstack", "GraphQL", "Gatsby", "Adventure Racing", "Endurance", "Mountain Biking", "Portfolio"]
   },
   plugins: [
     `gatsby-plugin-sass`,

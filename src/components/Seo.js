@@ -12,6 +12,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            keywords
           }
         }
       }
@@ -19,14 +20,16 @@ function SEO({ description, lang, meta, title }) {
   )
 
   // Bring in custom SEO description, or use default site description
-  const metaDescription = description || site.siteMetadata.metaDescription
+  const metaDescription = description || site.siteMetadata.description
+
+  console.log(site.siteMetadata.keywords.join(","))
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={site.siteMetadata.title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -61,6 +64,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `keywords`,
+          content: site.siteMetadata.keywords.join(","),
+        }
       ].concat(meta)}
     />
   )
