@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 
 const DeveloperPage = ({ data }) => {
   const { allMarkdownRemark } = useStaticQuery(allDeveloperQuery)
@@ -9,6 +10,7 @@ const DeveloperPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Developer Work Portfolio" />
       <section className="section">
         {portfolios.map(({ node: portfolio }) => {
           const featuredImage = portfolio.frontmatter.featuredImage.childImageSharp.fixed

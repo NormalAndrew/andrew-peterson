@@ -3,7 +3,7 @@ title: CentriCell Design - 2005
 date: 2005-05-05
 path: /centricell-design-2005
 author: 'Andrew Peterson'
-excerpt: ''
+excerpt: 'Innovative centrifuge design for handling cells.'
 type: portfolio
 featuredImage: centricell-simple.jpg
 tags: ["mechanical","design"]

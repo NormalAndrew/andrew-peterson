@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
+import SEO from '../components/Seo'
 
 function PortfolioPostTemplate({ data }) {
   const { markdownRemark } = data
@@ -12,6 +13,7 @@ function PortfolioPostTemplate({ data }) {
 
   return (
     <Layout>
+      <SEO title={frontmatter.title} description={frontmatter.excerpt} />
       <section className="section">
         <div className="container content">
           <div className="columns is-flex is-centered is-vcentered">
@@ -44,6 +46,7 @@ export const portfolioPageQuery = graphql`
         path
         title
         company
+        excerpt
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 1200) {

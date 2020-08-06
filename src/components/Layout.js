@@ -8,7 +8,7 @@ const Layout = ({ children, siteTitle }) => {
       query {
         site {
           siteMetadata {
-            title
+            author
           }
         }
       }
@@ -17,7 +17,7 @@ const Layout = ({ children, siteTitle }) => {
 
   return (
     <div>
-      <Navbar siteTitle={site.siteMetadata.title} />
+      <Navbar siteTitle={site.siteMetadata.author} />
       {children}
     </div>
   )

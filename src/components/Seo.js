@@ -22,8 +22,6 @@ function SEO({ description, lang, meta, title }) {
   // Bring in custom SEO description, or use default site description
   const metaDescription = description || site.siteMetadata.description
 
-  console.log(site.siteMetadata.keywords.join(","))
-
   return (
     <Helmet
       htmlAttributes={{
