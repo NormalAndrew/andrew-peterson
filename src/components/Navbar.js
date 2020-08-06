@@ -16,7 +16,7 @@ const Navbar = ({ siteTitle }) => {
             <h4 className="is-size-4">{siteTitle}</h4>
           </Link>
           {/* Hamburger menu */}
-          <a
+          <div
             onClick={() => setIsActive(!isActive)}
             role="button"
             className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
@@ -27,7 +27,7 @@ const Navbar = ({ siteTitle }) => {
             <span />
             <span />
             <span />
-          </a>
+          </div>
         </div>
         <div
           id="navMenu"
@@ -38,11 +38,9 @@ const Navbar = ({ siteTitle }) => {
               About
               </Link>
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">
-                <Link className="navbar-item" to="/portfolio">
-                  Portfolio
+              <Link className="navbar-link" to="/portfolio">
+                Portfolio
                 </Link>
-              </a>
               <div className="navbar-dropdown">
                 <Link className="navbar-item" to="/engineer">
                   Engineer
