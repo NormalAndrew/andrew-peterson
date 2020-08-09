@@ -23,7 +23,7 @@ const DeveloperPage = ({ data }) => {
                     <div className="content">
                       <Img
                         fixed={featuredImage}
-                        alt="Sample Image"
+                        alt={portfolio.frontmatter.title}
                       />
                     </div>
                   </div>

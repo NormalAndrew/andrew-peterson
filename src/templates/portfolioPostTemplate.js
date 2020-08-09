@@ -20,11 +20,13 @@ function PortfolioPostTemplate({ data }) {
             <div className="column is-10 is-offset-1">
               <Img
                 fluid={featuredImage}
-                alt="Sample Image"
+                alt={frontmatter.title}
               />
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{frontmatter.title}</h1>
-              <h2 className="subtitle">{frontmatter.date}</h2>
-              <h2 className="subtitle">{frontmatter.company}</h2>
+              <h2 className="subtitle">Date: {frontmatter.date}</h2>
+              {frontmatter.company &&
+                <h2 className="subtitle">Company: {frontmatter.company}</h2>}
+              <hr />
               <div
                 className="content"
                 dangerouslySetInnerHTML={{ __html: html }}
