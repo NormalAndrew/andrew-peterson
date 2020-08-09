@@ -1,9 +1,9 @@
 ---
-title: 'Traffic Wave - 2007'
+title: 'Traffic Wave'
 date: 2007-07-23
 path: /traffic-wave
 author: 'Andrew Peterson'
-excerpt: ''
+excerpt: 'Art project in need of an engineer to help design a pneumatic system.'
 type: portfolio
 featuredImage: traffic-wave-hammers.jpg
 tags: ["mechanical","design"]

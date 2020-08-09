@@ -1,5 +1,5 @@
 ---
-title: CentriCell Design - 2005
+title: CentriCell Design
 date: 2005-05-05
 path: /centricell-design-2005
 author: 'Andrew Peterson'
