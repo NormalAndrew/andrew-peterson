@@ -10,6 +10,7 @@ function PortfolioPostTemplate({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const featuredImage = frontmatter.featuredImage.childImageSharp.fluid
+  console.log(frontmatter.tools)
 
   return (
     <Layout>
@@ -31,6 +32,16 @@ function PortfolioPostTemplate({ data }) {
                 className="content"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
+              {frontmatter.tools[0] && (
+               <>
+               <h2 className="subtitle">Tools Used:</h2>
+               <ul>
+                {frontmatter.tools.map((tool) => (
+                  <li>{tool}</li>
+                ))}
+               </ul>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -49,6 +60,7 @@ export const portfolioPageQuery = graphql`
         title
         company
         excerpt
+        tools
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 1200) {
