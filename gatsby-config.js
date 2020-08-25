@@ -47,6 +47,7 @@ module.exports = {
         ]
       },
     },
+    // Source portfolio posts
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -54,16 +55,23 @@ module.exports = {
         path: `${__dirname}/src/portfolio`
       }
     },
+    // Source images for tools used
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tools`,
+        path: `${__dirname}/src/images/tool-icons`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Rubik`,
-            variants: [`400`]
-          },
+          `Rubik`,
+          `400`,
         ],
-      },
-    },
+        display: 'swap'
+      }
+    }
   ],
 }
