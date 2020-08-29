@@ -9,6 +9,7 @@ featuredImage: pilot2-assembled.jpg
 tags: ["mechanical", "design"]
 backgroundColor: "#414141"
 company: "Seriforge"
+tools: ["Solidworks", "PDM", "Excel"]
 ---
 
 I joined Seriforge as they were designing their second generation carbon
@@ -22,9 +23,3 @@ There were considerable challenges around stitching through thick (up to 1in) la
 The first "Pilot" machine we built came together within a year of conception, stitching customer parts. We battled a few challenges, namely reliably stitching without bending needle tips, or losing the fiber tow from the needle (at times we were only getting 10 successful stitches before running into issues). Early on I helped restrain the team from trying to tackle these issues with a shotgun approach, rather taking the time to identify the root causes of our issues (via brainstorms and design of experiments). We were able to identify the major contributors to our issues, and try small iterations on our design on a test bench setup. Within a month (with a few new rounds of CNC parts) we had our system stitching reliably, able to perform 100s of stitches without any errors or faults.
 
 This was a fantastic project to work on. We had a fantastic team dynamic, and accomplished remarkable tasks in short time frames. I felt privileged to contribute to an amazing team effort.
-
-Tools used:
-
-- SolidWorks 2018
-- PDM Standard
-- Excel

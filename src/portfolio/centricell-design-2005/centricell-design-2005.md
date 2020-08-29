@@ -2,14 +2,16 @@
 title: CentriCell Design
 date: 2005-05-05
 path: /centricell-design-2005
-author: 'Andrew Peterson'
-excerpt: 'Innovative centrifuge design for handling cells.'
+author: "Andrew Peterson"
+excerpt: "Innovative centrifuge design for handling cells."
 type: portfolio
 featuredImage: centricell-simple.jpg
-tags: ["mechanical","design"]
+tags: ["mechanical", "design"]
 backgroundColor: "#414141"
 company: "Molecular Devices"
+tools: ["Solidworks", "PDM", "Excel", "LabVIEW"]
 ---
+
 The goal of this project was to create an automated cell handling system for Molecular Devices next generation high throughput electrophysiology piece of equipment. I was the only engineer working on this aspect of the project, which covered maintaining the health of live cells suspended in a media bath, concentrating the cells while exchanging the media they are suspended in.
 
 At the time we first worked with the idea of using a traditional centrifuge to concentrate the cells. This design took up considerable real estate …so we pushed the boundaries, and I came up with a new, innovative centrifuge design to achieve the same result in a fraction of the footprint. With this new centrifuge, a new cell concentration and resuspension process was also developed. Both this process and centrifuge are currently being patented by Molecular Devices.
