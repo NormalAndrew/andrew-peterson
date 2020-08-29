@@ -1,5 +1,28 @@
 const path = require(`path`)
 
+exports.createSchemaCustomization = ({actions, schema}) => {
+  const { createTypes } = actions
+  const typeDefs = [
+    "type MarkdownRemark implements Node { frontmatter: Frontmatter }",
+    schema.buildObjectType({
+      name: "Frontmatter",
+      fields: {
+        tools: {
+          type: "[String!]",
+          resolve(source, args, context, info) {
+            const { tools } = source
+            if (source.tools == null || (Array.isArray(tools) && !tools.length)) {
+              return [""]
+            }
+            return tools
+          },
+        },
+      },
+    }),
+  ]
+  createTypes(typeDefs)
+}
+
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -10,6 +33,7 @@ exports.createPages = async ({ actions, graphql }) => {
           node {
             frontmatter {
               path
+              tools
             }
           }
         }
@@ -25,6 +49,9 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage({
       path: node.frontmatter.path,
       component: path.resolve(`src/templates/portfolioPostTemplate.js`),
+      context: {
+        tools: node.frontmatter.tools,
+      }
     })
   })
 }

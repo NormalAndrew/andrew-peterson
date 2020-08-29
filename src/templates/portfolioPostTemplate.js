@@ -7,10 +7,13 @@ import Layout from '../components/Layout'
 import SEO from '../components/Seo'
 
 function PortfolioPostTemplate({ data }) {
+  console.log(data)
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const featuredImage = frontmatter.featuredImage.childImageSharp.fluid
   console.log(frontmatter.tools)
+  const toolImages = data.allFile.edges
+  console.log(toolImages)
 
   return (
     <Layout>
@@ -32,14 +35,25 @@ function PortfolioPostTemplate({ data }) {
                 className="content"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
-              {frontmatter.tools[0] && (
-               <>
-               <h2 className="subtitle">Tools Used:</h2>
-               <ul>
-                {frontmatter.tools.map((tool) => (
-                  <li>{tool}</li>
-                ))}
-               </ul>
+              {toolImages.length>0 && (
+                <>
+                  <h2 className="subtitle">Tools Used:</h2>
+                  <div className="level">
+                    <div className="level-left">
+                      {toolImages.map(({node: tool}) => {
+                        console.log(tool)
+                        
+                        return (
+                          <div className="level-item" key={tool.name}>
+                            <div className="container">
+                              <h3 className="subtitle is-size-5 has-text-centered">{tool.name}</h3>
+                              <Img fixed={tool.childImageSharp.fixed} alt={tool.name} />
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
                 </>
               )}
             </div>
@@ -51,7 +65,7 @@ function PortfolioPostTemplate({ data }) {
 }
 
 export const portfolioPageQuery = graphql`
-  query($path: String!) {
+  query($path: String!, $tools: [String]) {
     markdownRemark(frontmatter: {path: {eq: $path}}) {
       html
       frontmatter {
@@ -64,6 +78,21 @@ export const portfolioPageQuery = graphql`
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    allFile(filter: {name: {in: $tools}}) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fixed(width: 128, height: 128) {
+              ...GatsbyImageSharpFixed
+            }
+            fluid(maxWidth:128) {
               ...GatsbyImageSharpFluid
             }
           }
